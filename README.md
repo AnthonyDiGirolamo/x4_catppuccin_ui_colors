@@ -1,5 +1,7 @@
 # X4 Foundations Catppucin UI Colors
 
+A mod that changes the UI colors to match the [Catppuccin palette](https://catppuccin.com/palette/).
+
 ![/screenshots/screenshot1.jpg](/screenshots/screenshot1.jpg)
 
 ## Installing
