@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+
+  <!-- Example of changing a UI color mapping:
+
+  <replace sel="/colormap/mappings/mapping[@id='dialogmenu_normal_text']">
+    <mapping id="dialogmenu_normal_text" ref="amber_very_bright_glow"/>
+  </replace>
+
+  <replace sel="/colormap/mappings/mapping[@id='dialogmenu_normal_background']">
+    <mapping id="dialogmenu_normal_background" ref="amber_very_bright_glow"/>
+  </replace>
+
+  <replace sel="/colormap/mappings/mapping[@id='dialogmenu_instant_text']">
+    <mapping id="dialogmenu_instant_text" ref="amber_extra_bright_glow"/>
+  </replace>
+
+  <replace sel="/colormap/mappings/mapping[@id='dialogmenu_instant_background']">
+    <mapping id="dialogmenu_instant_background" ref="amber_extra_bright_glow"/>
+  </replace>
+
+  <replace sel="/colormap/mappings/mapping[@id='dialogmenu_center_unselected']">
+    <mapping id="dialogmenu_center_unselected" ref="amber_very_bright"/>
+  </replace>
+  -->
+
+  <!-- Adding new colors: -->
+
+  <add sel="/colormap/colors">
+    <color id="catp_rosewater" r="245" g="224" b="220" a="255"/>
+    <color id="catp_rosewater_1" r="244" g="219" b="214" a="255"/>
+    <color id="catp_rosewater_0" r="242" g="213" b="207" a="255"/>
+    <color id="catp_flamingo" r="242" g="205" b="205" a="255"/>
+    <color id="catp_flamingo_1" r="240" g="198" b="198" a="255"/>
+    <color id="catp_flamingo_0" r="238" g="190" b="190" a="255"/>
+    <color id="catp_pink" r="245" g="194" b="231" a="255"/>
+    <color id="catp_pink_1" r="245" g="194" b="231" a="255"/>
+    <color id="catp_pink_0" r="245" g="194" b="231" a="255"/>
+    <color id="catp_mauve" r="203" g="166" b="247" a="255"/>
+    <color id="catp_mauve_1" r="198" g="160" b="246" a="255"/>
+    <color id="catp_mauve_0" r="202" g="158" b="230" a="255"/>
+    <color id="catp_red" r="243" g="139" b="168" a="255"/>
+    <color id="catp_red_1" r="237" g="135" b="150" a="255"/>
+    <color id="catp_red_0" r="231" g="130" b="132" a="255"/>
+    <color id="catp_maroon" r="235" g="160" b="172" a="255"/>
+    <color id="catp_maroon_1" r="238" g="153" b="160" a="255"/>
+    <color id="catp_maroon_0" r="234" g="153" b="156" a="255"/>
+    <color id="catp_peach" r="250" g="179" b="135" a="255"/>
+    <color id="catp_peach_1" r="245" g="169" b="127" a="255"/>
+    <color id="catp_peach_0" r="239" g="159" b="118" a="255"/>
+    <color id="catp_yellow" r="249" g="226" b="175" a="255"/>
+    <color id="catp_yellow_1" r="238" g="212" b="159" a="255"/>
+    <color id="catp_yellow_0" r="229" g="200" b="144" a="255"/>
+    <color id="catp_green" r="166" g="227" b="161" a="255"/>
+    <color id="catp_green_1" r="166" g="218" b="149" a="255"/>
+    <color id="catp_green_0" r="166" g="209" b="137" a="255"/>
+    <color id="catp_teal" r="148" g="226" b="213" a="255"/>
+    <color id="catp_teal_1" r="139" g="213" b="202" a="255"/>
+    <color id="catp_teal_0" r="129" g="200" b="190" a="255"/>
+    <color id="catp_sky" r="137" g="220" b="235" a="255"/>
+    <color id="catp_sky_1" r="145" g="215" b="227" a="255"/>
+    <color id="catp_sky_0" r="153" g="209" b="219" a="255"/>
+    <color id="catp_sapphire" r="116" g="199" b="236" a="255"/>
+    <color id="catp_sapphire_1" r="125" g="196" b="228" a="255"/>
+    <color id="catp_sapphire_0" r="133" g="193" b="220" a="255"/>
+    <color id="catp_blue" r="137" g="180" b="250" a="255"/>
+    <color id="catp_blue_1" r="138" g="173" b="244" a="255"/>
+    <color id="catp_blue_0" r="140" g="170" b="238" a="255"/>
+    <color id="catp_blue_a" r="140" g="166" b="230" a="255"/>
+    <color id="catp_blue_b" r="143" g="166" b="225" a="255"/>
+    <color id="catp_blue_c" r="145" g="164" b="217" a="255"/>
+    <color id="catp_blue_d" r="114" g="151" b="209" a="255"/>
+    <color id="catp_lavender" r="180" g="190" b="254" a="255"/>
+    <color id="catp_lavender_1" r="183" g="189" b="248" a="255"/>
+    <color id="catp_lavender_0" r="186" g="187" b="241" a="255"/>
+    <color id="catp_text" r="205" g="214" b="244" a="255"/>
+    <color id="catp_subtext_1" r="186" g="194" b="222" a="255"/>
+    <color id="catp_subtext_0" r="166" g="173" b="200" a="255"/>
+    <color id="catp_overlay_2" r="147" g="153" b="178" a="255"/>
+    <color id="catp_overlay_1" r="127" g="132" b="156" a="255"/>
+    <color id="catp_overlay_0" r="108" g="112" b="134" a="255"/>
+    <color id="catp_surface_2" r="88" g="91" b="112" a="255"/>
+    <color id="catp_surface_1" r="69" g="71" b="90" a="255"/>
+    <color id="catp_surface_0" r="49" g="50" b="68" a="255"/>
+    <color id="catp_base" r="30" g="30" b="46" a="255"/>
+    <color id="catp_mantle" r="24" g="24" b="37" a="255"/>
+    <color id="catp_crust" r="17" g="17" b="27" a="255"/>
+  </add>
+
+  <!-- Replacing green colors: -->
+
+  <replace sel="/colormap/colors/color[@id='green']">
+    <color id="green" r="166" g="227" b="161" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_weak_glow']">
+    <color id="green_weak_glow" r="166" g="227" b="161" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_moderate_glow']">
+    <color id="green_moderate_glow" r="166" g="227" b="161" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_glow']">
+    <color id="green_glow" r="166" g="227" b="161" a="255" glow="0.5"/>
+  </replace>
+
+  <!-- Replacing all azure colors: -->
+
+  <replace sel="/colormap/colors/color[@id='azure_very_bright']">
+    <color id="azure_very_bright" r="186" g="194" b="222" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_bright_weak_glow']">
+    <color id="azure_very_bright_weak_glow" r="186" g="194" b="222" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_bright_glow']">
+    <color id="azure_very_bright_glow" r="186" g="194" b="222" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_bright_strong_glow']">
+    <color id="azure_very_bright_strong_glow" r="186" g="194" b="222" a="255" glow="1.0"/>
+  </replace>
+
+  <replace sel="/colormap/colors/color[@id='azure_bright']">
+    <color id="azure_bright" r="166" g="173" b="200" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_bright_weak_glow']">
+    <color id="azure_bright_weak_glow" r="166" g="173" b="200" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_bright_moderate_glow']">
+    <color id="azure_bright_moderate_glow" r="166" g="173" b="200" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_bright_glow']">
+    <color id="azure_bright_glow" r="166" g="173" b="200" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_bright_alpha_160_glow']">
+    <color id="azure_bright_alpha_160_glow" r="166" g="173" b="200" a="160" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_bright_strong_glow']">
+    <color id="azure_bright_strong_glow" r="166" g="173" b="200" a="255" glow="1"/>
+  </replace>
+
+  <replace sel="/colormap/colors/color[@id='azure']">
+    <color id="azure" r="147" g="153" b="178" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_alpha_128']">
+    <color id="azure_alpha_128" r="147" g="153" b="178" a="128"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_weak_glow']">
+    <color id="azure_weak_glow" r="147" g="153" b="178" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_moderate_glow']">
+    <color id="azure_moderate_glow" r="147" g="153" b="178" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_glow']">
+    <color id="azure_glow" r="147" g="153" b="178" a="255" glow="0.5"/>
+  </replace>
+
+  <replace sel="/colormap/colors/color[@id='azure_dark']">
+    <color id="azure_dark" r="127" g="132" b="156" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_dark_moderate_glow']">
+    <color id="azure_dark_moderate_glow" r="127" g="132" b="156" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_dark_glow']">
+    <color id="azure_dark_glow" r="127" g="132" b="156" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_dark_alpha_160']">
+    <color id="azure_dark_alpha_160" r="127" g="132" b="156" a="160"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_dark_alpha_160_glow']">
+    <color id="azure_dark_alpha_160_glow" r="127" g="132" b="156" a="160" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_dark_alpha_224']">
+    <color id="azure_dark_alpha_224" r="127" g="132" b="156" a="224"/>
+  </replace>
+
+  <replace sel="/colormap/colors/color[@id='azure_very_dark']">
+    <color id="azure_very_dark" r="88" g="91" b="112" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_dark_moderate_glow']">
+    <color id="azure_very_dark_moderate_glow" r="88" g="91" b="112" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_dark_glow']">
+    <color id="azure_very_dark_glow" r="88" g="91" b="112" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_dark_alpha_160']">
+    <color id="azure_very_dark_alpha_160" r="88" g="91" b="112" a="160"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_dark_alpha_224']">
+    <color id="azure_very_dark_alpha_224" r="88" g="91" b="112" a="224"/>
+  </replace>
+
+  <replace sel="/colormap/colors/color[@id='azure_extra_dark']">
+    <color id="azure_extra_dark" r="49" g="50" b="68" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_extra_dark_glow']">
+    <color id="azure_extra_dark_glow" r="49" g="50" b="68" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_extra_dark_alpha_96']">
+    <color id="azure_extra_dark_alpha_96" r="49" g="50" b="68" a="96"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_extra_dark_alpha_160']">
+    <color id="azure_extra_dark_alpha_160" r="49" g="50" b="68" a="160"/>
+  </replace>
+</diff>
