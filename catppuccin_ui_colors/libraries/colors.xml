@@ -36,8 +36,7 @@
 
   -->
 
- <!-- WIP Dialog Menu Colors
-
+  <!-- WIP Dialog Menu Colors
   <replace sel="/colormap/mappings/mapping[@id='dialogmenu_normal_text']">
     <mapping id="dialogmenu_normal_text" ref="amber_very_bright_glow"/>
   </replace>
@@ -57,8 +56,25 @@
   <replace sel="/colormap/mappings/mapping[@id='dialogmenu_center_unselected']">
     <mapping id="dialogmenu_center_unselected" ref="amber_very_bright"/>
   </replace>
-
   -->
+
+  <!-- Common UI components -->
+
+  <!-- buttons -->
+  <replace sel="/colormap/mappings/mapping[@id='button_background_default']">
+    <mapping id="button_background_default" ref="catp_surface_2_alpha_224"/>
+  </replace>
+
+  <!-- rows -->
+  <replace sel="/colormap/colors/color[@id='row_background_blue']">
+    <mapping id="row_background_blue" ref="catp_surface_2_alpha_224"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='row_background_blue_opaque']">
+    <mapping id="row_background_blue_opaque" ref="catp_overlay_1"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='row_background_selected']">
+    <mapping id="row_background_selected" ref="catp_subtext_0_alpha_160_glow"/>
+  </replace>
 
   <!-- Adding new colors: -->
 
@@ -109,35 +125,751 @@
     <color id="catp_lavender_1" r="183" g="189" b="248" a="255"/>
     <color id="catp_lavender_0" r="186" g="187" b="241" a="255"/>
     <color id="catp_text" r="205" g="214" b="244" a="255"/>
+
+    <!-- azure_very_bright -->
     <color id="catp_subtext_1" r="186" g="194" b="222" a="255"/>
+
+    <!-- azure_bright -->
     <color id="catp_subtext_0" r="166" g="173" b="200" a="255"/>
+    <color id="catp_subtext_0_alpha_160_glow" r="166" g="173" b="200" a="160" glow="0.5"/>
+
+    <!-- azure -->
     <color id="catp_overlay_2" r="147" g="153" b="178" a="255"/>
+
+    <!-- azure_dark -->
     <color id="catp_overlay_1" r="127" g="132" b="156" a="255"/>
+
     <color id="catp_overlay_0" r="108" g="112" b="134" a="255"/>
+
+    <!-- azure_very_dark -->
     <color id="catp_surface_2" r="88" g="91" b="112" a="255"/>
+    <color id="catp_surface_2_alpha_224" r="88" g="91" b="112" a="224"/>
+
     <color id="catp_surface_1" r="69" g="71" b="90" a="255"/>
+
+    <!-- azure_extra_dark -->
     <color id="catp_surface_0" r="49" g="50" b="68" a="255"/>
+    <color id="catp_surface_0_alpha_224" r="49" g="50" b="68" a="224"/>
+
     <color id="catp_base" r="30" g="30" b="46" a="255"/>
     <color id="catp_mantle" r="24" g="24" b="37" a="255"/>
     <color id="catp_crust" r="17" g="17" b="27" a="255"/>
   </add>
 
-  <!-- Replacing green colors: -->
+  <!-- original color id="red" r="255" g="0" b="0" a="255" -->
+  <!-- original color id="red_weak_glow" r="255" g="0" b="0" a="255" glow="0.05" -->
+  <!-- original color id="red_moderate_glow" r="255" g="0" b="0" a="255" glow="0.2" -->
+  <!-- original color id="red_glow" r="255" g="0" b="0" a="255" glow="0.5" -->
+  <!-- original color id="red_alpha_64" r="255" g="0" b="0" a="64" -->
+  <!-- original color id="red_very_bright_weak_glow" r="255" g="153" b="153" a="255" glow="0.05" -->
+  <!-- original color id="red_very_bright_moderate_glow" r="255" g="153" b="153" a="255" glow="0.2" -->
+  <!-- original color id="red_very_bright_glow" r="255" g="153" b="153" a="255" glow="0.5" -->
+  <!-- original color id="red_very_bright_alpha_160_glow" r="255" g="153" b="153" a="160" glow="0.5" -->
+  <!-- original color id="red_extra_bright_glow" r="255" g="204" b="204" a="255" glow="0.5" -->
+  <!-- original color id="red_extra_bright_strong_glow" r="255" g="204" b="204" a="255" glow="1.0" -->
+  <!-- original color id="red_bright" r="255" g="77" b="77" a="255" -->
+  <!-- original color id="red_bright_weak_glow" r="255" g="77" b="77" a="255" glow="0.05" -->
+  <!-- original color id="red_bright_moderate_glow" r="255" g="77" b="77" a="255" glow="0.2" -->
+  <!-- original color id="red_bright_glow" r="255" g="77" b="77" a="255" glow="0.5" -->
+  <!-- original color id="red_dark" r="179" g="0" b="0" a="255" -->
+  <!-- original color id="red_dark_moderate_glow" r="179" g="0" b="0" a="255" glow="0.2" -->
+  <!-- original color id="red_dark_glow" r="179" g="0" b="0" a="255" glow="0.5" -->
+  <!-- original color id="red_dark_alpha_128" r="179" g="0" b="0" a="128" -->
+  <!-- original color id="red_dark_alpha_160" r="179" g="0" b="0" a="160" -->
+  <!-- original color id="red_dark_alpha_160_glow" r="179" g="0" b="0" a="160" glow="0.5" -->
+  <!-- original color id="red_very_dark" r="102" g="0" b="0" a="255" -->
+  <!-- original color id="red_very_dark_moderate_glow" r="102" g="0" b="0" a="255" glow="0.2" -->
+  <!-- original color id="red_very_dark_glow" r="102" g="0" b="0" a="255" glow="0.5" -->
+  <!-- original color id="red_extra_dark" r="50" g="0" b="0" a="255" -->
+  <!-- original color id="orange" r="255" g="139" b="0" a="255" -->
+  <!-- original color id="orange_weak_glow" r="255" g="139" b="0" a="255" glow="0.05" -->
+  <!-- original color id="orange_moderate_glow" r="255" g="139" b="0" a="255" glow="0.2" -->
+  <!-- original color id="orange_glow" r="255" g="139" b="0" a="255" glow="0.5" -->
+  <!-- original color id="orange_alpha_160" r="255" g="139" b="0" a="160" -->
+  <!-- original color id="orange_alpha_160_glow" r="255" g="139" b="0" a="160" glow="0.5" -->
+  <!-- original color id="orange_very_bright" r="255" g="209" b="153" a="255" -->
+  <!-- original color id="orange_bright" r="255" g="185" b="102" a="255" -->
+  <!-- original color id="orange_bright_weak_glow" r="255" g="185" b="102" a="255" glow="0.05" -->
+  <!-- original color id="orange_bright_moderate_glow" r="255" g="185" b="102" a="255" glow="0.2" -->
+  <!-- original color id="orange_bright_glow" r="255" g="185" b="102" a="255" glow="0.5" -->
+  <!-- original color id="orange_bright_alpha_160" r="255" g="185" b="102" a="160" -->
+  <!-- original color id="orange_bright_alpha_160_glow" r="255" g="185" b="102" a="160" glow="0.5" -->
+  <!-- original color id="orange_dark" r="179" g="97" b="0" a="255" -->
+  <!-- original color id="orange_dark_alpha_128" r="179" g="97" b="0" a="128" -->
+  <!-- original color id="orange_dark_weak_glow" r="179" g="97" b="0" a="255" glow="0.05" -->
+  <!-- original color id="orange_dark_glow" r="179" g="97" b="0" a="255" glow="0.5" -->
+  <!-- original color id="orange_very_dark" r="102" g="55" b="0" a="255" -->
+  <!-- original color id="orange_very_dark_glow" r="102" g="55" b="0" a="255" glow="0.5" -->
+  <!-- original color id="orange_extra_dark" r="51" g="28" b="0" a="255" -->
+  <!-- original color id="orange_extra_dark_alpha_160" r="51" g="28" b="0" a="160" -->
+  <!-- original color id="orange_extra_dark_glow" r="51" g="28" b="0" a="255" glow="0.5" -->
+  <!-- original color id="amber" r="255" g="191" b="0" a="255" -->
+  <!-- original color id="amber_moderate_glow" r="255" g="191" b="0" a="255" glow="0.2" -->
+  <!-- original color id="amber_glow" r="255" g="191" b="0" a="255" glow="0.5" -->
+  <!-- original color id="amber_extra_bright" r="255" g="242" b="204" a="255" -->
+  <!-- original color id="amber_extra_bright_glow" r="255" g="242" b="204" a="255" glow="0.5" -->
+  <!-- original color id="amber_very_bright" r="255" g="229" b="153" a="255" -->
+  <!-- original color id="amber_very_bright_glow" r="255" g="229" b="153" a="255" glow="0.5" -->
+  <!-- original color id="amber_bright" r="255" g="210" b="77" a="255" -->
+  <!-- original color id="amber_dark" r="179" g="134" b="0" a="255" -->
+  <!-- original color id="amber_dark_moderate_glow" r="179" g="134" b="0" a="255" glow="0.2" -->
+  <!-- original color id="amber_dark_glow" r="179" g="134" b="0" a="255" glow="0.5" -->
+  <!-- original color id="amber_very_dark" r="102" g="76" b="0" a="255" -->
+  <!-- original color id="amber_very_dark_moderate_glow" r="102" g="76" b="0" a="255" glow="0.2" -->
+  <!-- original color id="amber_extra_dark" r="51" g="35" b="0" a="255" -->
+  <!-- original color id="yellow" r="255" g="255" b="0" a="255" -->
+  <!-- original color id="yellow_moderate_glow" r="255" g="255" b="0" a="255" glow="0.2" -->
+  <!-- original color id="yellow_glow" r="255" g="255" b="0" a="255" glow="0.5" -->
+  <!-- original color id="yellow_alpha_160" r="255" g="255" b="0" a="160" -->
+  <!-- original color id="yellow_alpha_160_glow" r="255" g="255" b="0" a="160" glow="0.5" -->
+  <!-- original color id="yellow_extra_bright" r="255" g="255" b="204" a="255" -->
+  <!-- original color id="yellow_extra_bright_moderate_glow" r="255" g="255" b="204" a="255" glow="0.2" -->
+  <!-- original color id="yellow_very_bright" r="255" g="255" b="153" a="255" -->
+  <!-- original color id="yellow_very_bright_weak_glow" r="255" g="255" b="153" a="255" glow="0.05" -->
+  <!-- original color id="yellow_very_bright_glow" r="255" g="255" b="153" a="255" glow="0.5" -->
+  <!-- original color id="yellow_bright" r="255" g="255" b="77" a="255" -->
+  <!-- original color id="yellow_bright_glow" r="255" g="255" b="77" a="255" glow="0.5" -->
+  <!-- original color id="yellow_dark" r="179" g="179" b="0" a="255" -->
+  <!-- original color id="yellow_dark_weak_glow" r="179" g="179" b="0" a="255" glow="0.05" -->
+  <!-- original color id="yellow_dark_glow" r="179" g="179" b="0" a="255" glow="0.5" -->
+  <!-- original color id="yellow_very_dark" r="102" g="102" b="0" a="255" -->
+  <!-- original color id="yellow_very_dark_moderate_glow" r="102" g="102" b="0" a="255" glow="0.2" -->
+  <!-- original color id="yellow_very_dark_glow" r="102" g="102" b="0" a="255" glow="0.5" -->
+  <!-- original color id="green" r="0" g="255" b="0" a="255" -->
+  <!-- original color id="green_weak_glow" r="0" g="255" b="0" a="255" glow="0.05" -->
+  <!-- original color id="green_moderate_glow" r="0" g="255" b="0" a="255" glow="0.2" -->
+  <!-- original color id="green_glow" r="0" g="255" b="0" a="255" glow="0.5" -->
+  <!-- original color id="green_extra_bright" r="204" g="255" b="204" a="255" -->
+  <!-- original color id="green_extra_bright_weak_glow" r="204" g="255" b="204" a="255" glow="0.02" --> <!--"weak_glow" should be 0.05 but that was too much, therefore i am breaking the rule on purpose-->
+  <!-- original color id="green_extra_bright_glow" r="204" g="255" b="204" a="255" glow="0.5" -->
+  <!-- original color id="green_very_bright" r="153" g="255" b="153" a="255" -->
+  <!-- original color id="green_very_bright_weak_glow" r="153" g="255" b="153" a="255" glow="0.05" -->
+  <!-- original color id="green_very_bright_moderate_glow" r="153" g="255" b="153" a="255" glow="0.2" -->
+  <!-- original color id="green_very_bright_glow" r="153" g="255" b="153" a="255" glow="0.5" -->
+  <!-- original color id="green_bright" r="77" g="255" b="77" a="255" -->
+  <!-- original color id="green_bright_alpha_64" r="77" g="255" b="77" a="64" -->
+  <!-- original color id="green_bright_weak_glow" r="77" g="255" b="77" a="255" glow="0.05" -->
+  <!-- original color id="green_bright_moderate_glow" r="77" g="255" b="77" a="255" glow="0.2" -->
+  <!-- original color id="green_bright_glow" r="77" g="255" b="77" a="255" glow="0.5" -->
+  <!-- original color id="green_dark" r="0" g="179" b="0" a="255" -->
+  <!-- original color id="green_dark_moderate_glow" r="0" g="179" b="0" a="255" glow="0.2" -->
+  <!-- original color id="green_dark_weak_glow" r="0" g="179" b="0" a="255" glow="0.05" -->
+  <!-- original color id="green_dark_glow" r="0" g="179" b="0" a="255" glow="0.5" -->
+  <!-- original color id="green_very_dark" r="0" g="102" b="0" a="255" -->
+  <!-- original color id="green_very_dark_moderate_glow" r="0" g="102" b="0" a="255" glow="0.2" -->
+  <!-- original color id="green_very_dark_weak_glow" r="0" g="102" b="0" a="255" glow="0.05" -->
+  <!-- original color id="green_very_dark_glow" r="0" g="102" b="0" a="255" glow="0.5" -->
+  <!-- original color id="cyan" r="0" g="249" b="255" a="255" -->
+  <!-- original color id="cyan_weak_glow" r="0" g="249" b="255" a="255" glow="0.05" -->
+  <!-- original color id="cyan_glow" r="0" g="249" b="255" a="255" glow="0.5" -->
+  <!-- original color id="cyan_alpha_64_glow" r="0" g="249" b="255" a="64" -->
+  <!-- original color id="cyan_very_bright" r="153" g="253" b="255" a="255" -->
+  <!-- original color id="cyan_very_bright_glow" r="153" g="253" b="255" a="255" glow="0.5" -->
+  <!-- original color id="cyan_bright_glow" r="77" g="252" b="255" a="255" glow="0.5" -->
+  <!-- original color id="cyan_dark" r="0" g="175" b="179" a="255" -->
+  <!-- original color id="cyan_dark_weak_glow" r="0" g="175" b="179" a="255" glow="0.05" -->
+  <!-- original color id="cyan_dark_moderate_glow" r="0" g="175" b="179" a="255" glow="0.2" -->
+  <!-- original color id="cyan_dark_glow" r="0" g="175" b="179" a="255" glow="0.5" -->
+  <!-- original color id="cyan_very_dark" r="0" g="100" b="102" a="255" -->
+  <!-- original color id="cyan_very_dark_moderate_glow" r="0" g="100" b="102" a="255" glow="0.2" -->
+  <!-- original color id="cyan_very_dark_glow" r="0" g="100" b="102" a="255" glow="0.5" -->
+  <!-- original color id="cyan_extra_dark" r="0" g="49" b="51" a="255" -->
+  <!-- original color id="cyan_extra_dark_alpha_160" r="0" g="49" b="51" a="160" -->
+  <!-- original color id="azure" r="0" g="149" b="255" a="255" -->
+  <!-- original color id="azure_alpha_128" r="0" g="149" b="255" a="128" -->
+  <!-- original color id="azure_weak_glow" r="0" g="149" b="255" a="255" glow="0.05" -->
+  <!-- original color id="azure_moderate_glow" r="0" g="149" b="255" a="255" glow="0.2" -->
+  <!-- original color id="azure_glow" r="0" g="149" b="255" a="255" glow="0.5" -->
+  <!-- original color id="azure_very_bright" r="153" g="213" b="255" a="255" -->
+  <!-- original color id="azure_very_bright_weak_glow" r="153" g="213" b="255" a="255" glow="0.05" -->
+  <!-- original color id="azure_very_bright_glow" r="153" g="213" b="255" a="255" glow="0.5" -->
+  <!-- original color id="azure_very_bright_strong_glow" r="153" g="213" b="255" a="255" glow="1.0" -->
+  <!-- original color id="azure_bright" r="77" g="181" b="255" a="255" -->
+  <!-- original color id="azure_bright_weak_glow" r="77" g="181" b="255" a="255" glow="0.05" -->
+  <!-- original color id="azure_bright_moderate_glow" r="77" g="181" b="255" a="255" glow="0.2" -->
+  <!-- original color id="azure_bright_glow" r="77" g="181" b="255" a="255" glow="0.5" -->
+  <!-- original color id="azure_bright_alpha_160_glow" r="77" g="181" b="255" a="160" glow="0.5" -->
+  <!-- original color id="azure_bright_strong_glow" r="77" g="181" b="255" a="255" glow="1" -->
+  <!-- original color id="azure_dark" r="0" g="105" b="179" a="255" -->
+  <!-- original color id="azure_dark_moderate_glow" r="0" g="105" b="179" a="255" glow="0.2" -->
+  <!-- original color id="azure_dark_glow" r="0" g="105" b="179" a="255" glow="0.5" -->
+  <!-- original color id="azure_dark_alpha_160" r="0" g="105" b="179" a="160" -->
+  <!-- original color id="azure_dark_alpha_160_glow" r="0" g="105" b="179" a="160" glow="0.5" -->
+  <!-- original color id="azure_dark_alpha_224" r="0" g="105" b="179" a="224" -->
+  <!-- original color id="azure_very_dark" r="0" g="60" b="102" a="255" -->
+  <!-- original color id="azure_very_dark_moderate_glow" r="0" g="60" b="102" a="255" glow="0.2" -->
+  <!-- original color id="azure_very_dark_glow" r="0" g="60" b="102" a="255" glow="0.5" -->
+  <!-- original color id="azure_very_dark_alpha_160" r="0" g="60" b="102" a="160" -->
+  <!-- original color id="azure_very_dark_alpha_224" r="0" g="60" b="102" a="224" -->
+  <!-- original color id="azure_extra_dark" r="0" g="30" b="51" a="255" -->
+  <!-- original color id="azure_extra_dark_glow" r="0" g="30" b="51" a="255" glow="0.5" -->
+  <!-- original color id="azure_extra_dark_alpha_96" r="0" g="30" b="51" a="96" -->
+  <!-- original color id="azure_extra_dark_alpha_160" r="0" g="30" b="51" a="160" -->
+  <!-- original color id="magenta" r="255" g="0" b="255" a="255" -->
+  <!-- original color id="magenta_moderate_glow" r="255" g="0" b="255" a="255" glow="0.2" -->
+  <!-- original color id="magenta_glow" r="255" g="0" b="255" a="255" glow="0.5" -->
+  <!-- original color id="magenta_extra_bright_moderate_glow" r="255" g="204" b="255" a="255" glow="0.2" -->
+  <!-- original color id="magenta_very_bright" r="255" g="153" b="255" a="255" -->
+  <!-- original color id="magenta_very_bright_weak_glow" r="255" g="153" b="255" a="255" glow="0.05" -->
+  <!-- original color id="magenta_very_bright_moderate_glow" r="255" g="153" b="255" a="255" glow="0.2" -->
+  <!-- original color id="magenta_very_bright_glow" r="255" g="153" b="255" a="255" glow="0.5" -->
+  <!-- original color id="magenta_bright" r="255" g="77" b="255" a="255" -->
+  <!-- original color id="magenta_bright_moderate_glow" r="255" g="77" b="255" a="255" glow="0.2" -->
+  <!-- original color id="magenta_bright_glow" r="255" g="77" b="255" a="255" glow="0.5" -->
+  <!-- original color id="magenta_bright_alpha_160_glow" r="255" g="77" b="255" a="160" glow="0.5" -->
+  <!-- original color id="magenta_dark" r="179" g="0" b="179" a="255" -->
+  <!-- original color id="magenta_dark_weak_glow" r="179" g="0" b="179" a="255" glow="0.05" -->
+  <!-- original color id="magenta_dark_glow" r="179" g="0" b="179" a="255" glow="0.5" -->
+  <!-- original color id="magenta_dark_alpha_160_glow" r="179" g="0" b="179" a="160" glow="0.5" -->
+  <!-- original color id="magenta_very_dark" r="102" g="0" b="102" a="255" -->
+  <!-- original color id="magenta_very_dark_moderate_glow" r="102" g="0" b="102" a="255" glow="0.2" -->
+  <!-- original color id="magenta_very_dark_glow" r="102" g="0" b="102" a="255" glow="0.5" -->
+  <!-- original color id="magenta_extra_dark" r="51" g="0" b="51" a="255" -->
+  <!-- original color id="magenta_extra_dark_alpha_160" r="51" g="0" b="51" a="160" -->
+
+ <!-- Desaturated colors using Gimp: Colors > Saturation Scale=0.65 -->
+
+ <!-- Red colors -->
+
+  <replace sel="/colormap/colors/color[@id='red']">
+    <color id="red" r="222" g="79" b="79" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red']">
+    <color id="red" r="222" g="79" b="79" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_weak_glow']">
+    <color id="red_weak_glow" r="222" g="79" b="79" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_moderate_glow']">
+    <color id="red_moderate_glow" r="222" g="79" b="79" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_glow']">
+    <color id="red_glow" r="222" g="79" b="79" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_alpha_64']">
+    <color id="red_alpha_64" r="222" g="79" b="79" a="64"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_very_bright_weak_glow']">
+    <color id="red_very_bright_weak_glow" r="233" g="164" b="164" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_very_bright_moderate_glow']">
+    <color id="red_very_bright_moderate_glow" r="233" g="164" b="164" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_very_bright_glow']">
+    <color id="red_very_bright_glow" r="233" g="164" b="164" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_very_bright_alpha_160_glow']">
+    <color id="red_very_bright_alpha_160_glow" r="233" g="164" b="164" a="160" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_extra_bright_glow']">
+    <color id="red_extra_bright_glow" r="243" g="209" b="209" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_extra_bright_strong_glow']">
+    <color id="red_extra_bright_strong_glow" r="243" g="209" b="209" a="255" glow="1.0"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_bright']">
+    <color id="red_bright" r="224" g="107" b="107" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_bright_weak_glow']">
+    <color id="red_bright_weak_glow" r="224" g="107" b="107" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_bright_moderate_glow']">
+    <color id="red_bright_moderate_glow" r="224" g="107" b="107" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_bright_glow']">
+    <color id="red_bright_glow" r="224" g="107" b="107" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_dark']">
+    <color id="red_dark" r="155" g="53" b="53" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_dark_moderate_glow']">
+    <color id="red_dark_moderate_glow" r="155" g="53" b="53" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_dark_glow']">
+    <color id="red_dark_glow" r="155" g="53" b="53" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_dark_alpha_128']">
+    <color id="red_dark_alpha_128" r="155" g="53" b="53" a="128"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_dark_alpha_160']">
+    <color id="red_dark_alpha_160" r="155" g="53" b="53" a="160"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_dark_alpha_160_glow']">
+    <color id="red_dark_alpha_160_glow" r="155" g="53" b="53" a="160" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_very_dark']">
+    <color id="red_very_dark" r="88" g="26" b="26" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_very_dark_moderate_glow']">
+    <color id="red_very_dark_moderate_glow" r="88" g="26" b="26" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_very_dark_glow']">
+    <color id="red_very_dark_glow" r="88" g="26" b="26" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='red_extra_dark']">
+    <color id="red_extra_dark" r="42" g="8" b="8" a="255"/>
+  </replace>
+
+  <!-- Orange colors -->
+
+  <replace sel="/colormap/colors/color[@id='orange']">
+    <color id="orange" r="230" g="151" b="105" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_weak_glow']">
+    <color id="orange_weak_glow" r="230" g="151" b="105" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_moderate_glow']">
+    <color id="orange_moderate_glow" r="230" g="151" b="105" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_glow']">
+    <color id="orange_glow" r="230" g="151" b="105" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_alpha_160']">
+    <color id="orange_alpha_160" r="230" g="151" b="105" a="160"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_alpha_160_glow']">
+    <color id="orange_alpha_160_glow" r="230" g="151" b="105" a="160" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_very_bright']">
+    <color id="orange_very_bright" r="243" g="212" b="179" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_bright']">
+    <color id="orange_bright" r="238" g="190" b="146" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_bright_weak_glow']">
+    <color id="orange_bright_weak_glow" r="238" g="190" b="146" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_bright_moderate_glow']">
+    <color id="orange_bright_moderate_glow" r="238" g="190" b="146" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_bright_glow']">
+    <color id="orange_bright_glow" r="238" g="190" b="146" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_bright_alpha_160']">
+    <color id="orange_bright_alpha_160" r="238" g="190" b="146" a="160"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_bright_alpha_160_glow']">
+    <color id="orange_bright_alpha_160_glow" r="238" g="190" b="146" a="160" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_dark']">
+    <color id="orange_dark" r="161" g="106" b="72" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_dark_alpha_128']">
+    <color id="orange_dark_alpha_128" r="161" g="106" b="72" a="128"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_dark_weak_glow']">
+    <color id="orange_dark_weak_glow" r="161" g="106" b="72" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_dark_glow']">
+    <color id="orange_dark_glow" r="161" g="106" b="72" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_very_dark']">
+    <color id="orange_very_dark" r="92" g="60" b="39" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_very_dark_glow']">
+    <color id="orange_very_dark_glow" r="92" g="60" b="39" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_extra_dark']">
+    <color id="orange_extra_dark" r="46" g="30" b="17" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_extra_dark_alpha_160']">
+    <color id="orange_extra_dark_alpha_160" r="46" g="30" b="17" a="160"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='orange_extra_dark_glow']">
+    <color id="orange_extra_dark_glow" r="46" g="30" b="17" a="255" glow="0.5"/>
+  </replace>
+
+  <!-- Amber colors -->
+
+  <replace sel="/colormap/colors/color[@id='amber']">
+    <color id="amber" r="238" g="195" b="126" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='amber_moderate_glow']">
+    <color id="amber_moderate_glow" r="238" g="195" b="126" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='amber_glow']">
+    <color id="amber_glow" r="238" g="195" b="126" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='amber_extra_bright']">
+    <color id="amber_extra_bright" r="251" g="242" b="219" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='amber_extra_bright_glow']">
+    <color id="amber_extra_bright_glow" r="251" g="242" b="219" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='amber_very_bright']">
+    <color id="amber_very_bright" r="247" g="230" b="186" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='amber_very_bright_glow']">
+    <color id="amber_very_bright_glow" r="247" g="230" b="186" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='amber_bright']">
+    <color id="amber_bright" r="242" g="212" b="146" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='amber_dark']">
+    <color id="amber_dark" r="167" g="137" b="87" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='amber_dark_moderate_glow']">
+    <color id="amber_dark_moderate_glow" r="167" g="137" b="87" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='amber_dark_glow']">
+    <color id="amber_dark_glow" r="167" g="137" b="87" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='amber_very_dark']">
+    <color id="amber_very_dark" r="95" g="78" b="47" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='amber_very_dark_moderate_glow']">
+    <color id="amber_very_dark_moderate_glow" r="95" g="78" b="47" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='amber_extra_dark']">
+    <color id="amber_extra_dark" r="47" g="36" b="20" a="255"/>
+  </replace>
+
+  <!-- Yellow colors -->
+
+  <replace sel="/colormap/colors/color[@id='yellow']">
+    <color id="yellow" r="253" g="253" b="155" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_moderate_glow']">
+    <color id="yellow_moderate_glow" r="253" g="253" b="155" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_glow']">
+    <color id="yellow_glow" r="253" g="253" b="155" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_alpha_160']">
+    <color id="yellow_alpha_160" r="253" g="253" b="155" a="160"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_alpha_160_glow']">
+    <color id="yellow_alpha_160_glow" r="253" g="253" b="155" a="160" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_extra_bright']">
+    <color id="yellow_extra_bright" r="254" g="254" b="222" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_extra_bright_moderate_glow']">
+    <color id="yellow_extra_bright_moderate_glow" r="254" g="254" b="222" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_very_bright']">
+    <color id="yellow_very_bright" r="253" g="253" b="194" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_very_bright_weak_glow']">
+    <color id="yellow_very_bright_weak_glow" r="253" g="253" b="194" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_very_bright_glow']">
+    <color id="yellow_very_bright_glow" r="253" g="253" b="194" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_bright']">
+    <color id="yellow_bright" r="253" g="253" b="165" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_bright_glow']">
+    <color id="yellow_bright_glow" r="253" g="253" b="165" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_dark']">
+    <color id="yellow_dark" r="177" g="177" b="107" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_dark_weak_glow']">
+    <color id="yellow_dark_weak_glow" r="177" g="177" b="107" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_dark_glow']">
+    <color id="yellow_dark_glow" r="177" g="177" b="107" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_very_dark']">
+    <color id="yellow_very_dark" r="101" g="101" b="59" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_very_dark_moderate_glow']">
+    <color id="yellow_very_dark_moderate_glow" r="101" g="101" b="59" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='yellow_very_dark_glow']">
+    <color id="yellow_very_dark_glow" r="101" g="101" b="59" a="255" glow="0.5"/>
+  </replace>
+
+  <!-- Green colors -->
 
   <replace sel="/colormap/colors/color[@id='green']">
-    <color id="green" r="166" g="227" b="161" a="255"/>
+    <color id="green" r="137" g="244" b="137" a="255"/>
   </replace>
   <replace sel="/colormap/colors/color[@id='green_weak_glow']">
-    <color id="green_weak_glow" r="166" g="227" b="161" a="255" glow="0.05"/>
+    <color id="green_weak_glow" r="137" g="244" b="137" a="255" glow="0.05"/>
   </replace>
   <replace sel="/colormap/colors/color[@id='green_moderate_glow']">
-    <color id="green_moderate_glow" r="166" g="227" b="161" a="255" glow="0.2"/>
+    <color id="green_moderate_glow" r="137" g="244" b="137" a="255" glow="0.2"/>
   </replace>
   <replace sel="/colormap/colors/color[@id='green_glow']">
-    <color id="green_glow" r="166" g="227" b="161" a="255" glow="0.5"/>
+    <color id="green_glow" r="137" g="244" b="137" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_extra_bright']">
+    <color id="green_extra_bright" r="218" g="251" b="218" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_extra_bright_weak_glow']">
+    <color id="green_extra_bright_weak_glow" r="218" g="251" b="218" a="255" glow="0.02"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_extra_bright_glow']">
+    <color id="green_extra_bright_glow" r="218" g="251" b="218" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_very_bright']">
+    <color id="green_very_bright" r="186" g="247" b="186" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_very_bright_weak_glow']">
+    <color id="green_very_bright_weak_glow" r="186" g="247" b="186" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_very_bright_moderate_glow']">
+    <color id="green_very_bright_moderate_glow" r="186" g="247" b="186" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_very_bright_glow']">
+    <color id="green_very_bright_glow" r="186" g="247" b="186" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_bright']">
+    <color id="green_bright" r="150" g="244" b="150" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_bright_alpha_64']">
+    <color id="green_bright_alpha_64" r="150" g="244" b="150" a="64"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_bright_weak_glow']">
+    <color id="green_bright_weak_glow" r="150" g="244" b="150" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_bright_moderate_glow']">
+    <color id="green_bright_moderate_glow" r="150" g="244" b="150" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_bright_glow']">
+    <color id="green_bright_glow" r="150" g="244" b="150" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_dark']">
+    <color id="green_dark" r="94" g="171" b="94" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_dark_moderate_glow']">
+    <color id="green_dark_moderate_glow" r="94" g="171" b="94" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_dark_weak_glow']">
+    <color id="green_dark_weak_glow" r="94" g="171" b="94" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_dark_glow']">
+    <color id="green_dark_glow" r="94" g="171" b="94" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_very_dark']">
+    <color id="green_very_dark" r="51" g="97" b="51" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_very_dark_moderate_glow']">
+    <color id="green_very_dark_moderate_glow" r="51" g="97" b="51" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_very_dark_weak_glow']">
+    <color id="green_very_dark_weak_glow" r="51" g="97" b="51" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='green_very_dark_glow']">
+    <color id="green_very_dark_glow" r="51" g="97" b="51" a="255" glow="0.5"/>
   </replace>
 
-  <!-- Replacing all azure colors: -->
+  <!-- Cyan colors -->
+
+  <replace sel="/colormap/colors/color[@id='cyan']">
+    <color id="cyan" r="139" g="240" b="245" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='cyan_weak_glow']">
+    <color id="cyan_weak_glow" r="139" g="240" b="245" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='cyan_glow']">
+    <color id="cyan_glow" r="139" g="240" b="245" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='cyan_alpha_64_glow']">
+    <color id="cyan_alpha_64_glow" r="139" g="240" b="245" a="64"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='cyan_very_bright']">
+    <color id="cyan_very_bright" r="187" g="247" b="248" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='cyan_very_bright_glow']">
+    <color id="cyan_very_bright_glow" r="187" g="247" b="248" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='cyan_bright_glow']">
+    <color id="cyan_bright_glow" r="153" g="244" b="246" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='cyan_dark']">
+    <color id="cyan_dark" r="96" g="169" b="172" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='cyan_dark_weak_glow']">
+    <color id="cyan_dark_weak_glow" r="96" g="169" b="172" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='cyan_dark_moderate_glow']">
+    <color id="cyan_dark_moderate_glow" r="96" g="169" b="172" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='cyan_dark_glow']">
+    <color id="cyan_dark_glow" r="96" g="169" b="172" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='cyan_very_dark']">
+    <color id="cyan_very_dark" r="52" g="96" b="98" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='cyan_very_dark_moderate_glow']">
+    <color id="cyan_very_dark_moderate_glow" r="52" g="96" b="98" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='cyan_very_dark_glow']">
+    <color id="cyan_very_dark_glow" r="52" g="96" b="98" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='cyan_extra_dark']">
+    <color id="cyan_extra_dark" r="23" g="47" b="48" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='cyan_extra_dark_alpha_160']">
+    <color id="cyan_extra_dark_alpha_160" r="23" g="47" b="48" a="160"/>
+  </replace>
+
+  <!-- Azure colors -->
+
+  <replace sel="/colormap/colors/color[@id='azure']">
+    <color id="azure" r="88" g="147" b="224" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_alpha_128']">
+    <color id="azure_alpha_128" r="88" g="147" b="224" a="128"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_weak_glow']">
+    <color id="azure_weak_glow" r="88" g="147" b="224" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_moderate_glow']">
+    <color id="azure_moderate_glow" r="88" g="147" b="224" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_glow']">
+    <color id="azure_glow" r="88" g="147" b="224" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_bright']">
+    <color id="azure_very_bright" r="173" g="210" b="239" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_bright_weak_glow']">
+    <color id="azure_very_bright_weak_glow" r="173" g="210" b="239" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_bright_glow']">
+    <color id="azure_very_bright_glow" r="173" g="210" b="239" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_bright_strong_glow']">
+    <color id="azure_very_bright_strong_glow" r="173" g="210" b="239" a="255" glow="1.0"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_bright']">
+    <color id="azure_bright" r="121" g="178" b="230" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_bright_weak_glow']">
+    <color id="azure_bright_weak_glow" r="121" g="178" b="230" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_bright_moderate_glow']">
+    <color id="azure_bright_moderate_glow" r="121" g="178" b="230" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_bright_glow']">
+    <color id="azure_bright_glow" r="121" g="178" b="230" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_bright_alpha_160_glow']">
+    <color id="azure_bright_alpha_160_glow" r="121" g="178" b="230" a="160" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_bright_strong_glow']">
+    <color id="azure_bright_strong_glow" r="121" g="178" b="230" a="255" glow="1"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_dark']">
+    <color id="azure_dark" r="60" g="103" b="157" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_dark_moderate_glow']">
+    <color id="azure_dark_moderate_glow" r="60" g="103" b="157" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_dark_glow']">
+    <color id="azure_dark_glow" r="60" g="103" b="157" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_dark_alpha_160']">
+    <color id="azure_dark_alpha_160" r="60" g="103" b="157" a="160"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_dark_alpha_160_glow']">
+    <color id="azure_dark_alpha_160_glow" r="60" g="103" b="157" a="160" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_dark_alpha_224']">
+    <color id="azure_dark_alpha_224" r="60" g="103" b="157" a="224"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_dark']">
+    <color id="azure_very_dark" r="32" g="59" b="89" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_dark_moderate_glow']">
+    <color id="azure_very_dark_moderate_glow" r="32" g="59" b="89" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_dark_glow']">
+    <color id="azure_very_dark_glow" r="32" g="59" b="89" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_dark_alpha_160']">
+    <color id="azure_very_dark_alpha_160" r="32" g="59" b="89" a="160"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_very_dark_alpha_224']">
+    <color id="azure_very_dark_alpha_224" r="32" g="59" b="89" a="224"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_extra_dark']">
+    <color id="azure_extra_dark" r="13" g="29" b="44" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_extra_dark_glow']">
+    <color id="azure_extra_dark_glow" r="13" g="29" b="44" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_extra_dark_alpha_96']">
+    <color id="azure_extra_dark_alpha_96" r="13" g="29" b="44" a="96"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='azure_extra_dark_alpha_160']">
+    <color id="azure_extra_dark_alpha_160" r="13" g="29" b="44" a="160"/>
+  </replace>
+
+  <!-- Magenta colors -->
+
+  <replace sel="/colormap/colors/color[@id='magenta']">
+    <color id="magenta" r="224" g="89" b="224" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_moderate_glow']">
+    <color id="magenta_moderate_glow" r="224" g="89" b="224" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_glow']">
+    <color id="magenta_glow" r="224" g="89" b="224" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_extra_bright_moderate_glow']">
+    <color id="magenta_extra_bright_moderate_glow" r="244" g="210" b="244" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_very_bright']">
+    <color id="magenta_very_bright" r="235" g="167" b="235" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_very_bright_weak_glow']">
+    <color id="magenta_very_bright_weak_glow" r="235" g="167" b="235" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_very_bright_moderate_glow']">
+    <color id="magenta_very_bright_moderate_glow" r="235" g="167" b="235" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_very_bright_glow']">
+    <color id="magenta_very_bright_glow" r="235" g="167" b="235" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_bright']">
+    <color id="magenta_bright" r="227" g="113" b="227" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_bright_moderate_glow']">
+    <color id="magenta_bright_moderate_glow" r="227" g="113" b="227" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_bright_glow']">
+    <color id="magenta_bright_glow" r="227" g="113" b="227" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_bright_alpha_160_glow']">
+    <color id="magenta_bright_alpha_160_glow" r="227" g="113" b="227" a="160" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_dark']">
+    <color id="magenta_dark" r="157" g="60" b="157" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_dark_weak_glow']">
+    <color id="magenta_dark_weak_glow" r="157" g="60" b="157" a="255" glow="0.05"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_dark_glow']">
+    <color id="magenta_dark_glow" r="157" g="60" b="157" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_dark_alpha_160_glow']">
+    <color id="magenta_dark_alpha_160_glow" r="157" g="60" b="157" a="160" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_very_dark']">
+    <color id="magenta_very_dark" r="89" g="30" b="89" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_very_dark_moderate_glow']">
+    <color id="magenta_very_dark_moderate_glow" r="89" g="30" b="89" a="255" glow="0.2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_very_dark_glow']">
+    <color id="magenta_very_dark_glow" r="89" g="30" b="89" a="255" glow="0.5"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_extra_dark']">
+    <color id="magenta_extra_dark" r="44" g="11" b="44" a="255"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='magenta_extra_dark_alpha_160']">
+    <color id="magenta_extra_dark_alpha_160" r="44" g="11" b="44" a="160"/>
+  </replace>
+
+
+  <!-- Test Azure to catppuccin surface colors: -->
+
+  <!--
 
   <replace sel="/colormap/colors/color[@id='azure_very_bright']">
     <color id="azure_very_bright" r="186" g="194" b="222" a="255"/>
@@ -234,4 +966,7 @@
   <replace sel="/colormap/colors/color[@id='azure_extra_dark_alpha_160']">
     <color id="azure_extra_dark_alpha_160" r="49" g="50" b="68" a="160"/>
   </replace>
+
+  -->
+
 </diff>
