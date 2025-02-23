@@ -25,40 +25,34 @@
     <mapping id="targetmonitor_deco_background" ref="black_alpha_0"/>
   </replace>
 
-  <!-- TODO: Not sure what these appear as.
+  <!-- TODO: Not sure what these appear as. -->
 
+  <!--
   <replace sel="/colormap/mappings/mapping[@id='messageticker_deco_background']">
     <mapping id="messageticker_deco_background" ref="black_alpha_0"/>
   </replace>
   <replace sel="/colormap/mappings/mapping[@id='chat_background']">
     <mapping id="chat_background" ref="black_alpha_0"/>
   </replace>
-
-  -->
-
-  <!-- WIP Dialog Menu Colors
-  <replace sel="/colormap/mappings/mapping[@id='dialogmenu_normal_text']">
-    <mapping id="dialogmenu_normal_text" ref="amber_very_bright_glow"/>
-  </replace>
-
-  <replace sel="/colormap/mappings/mapping[@id='dialogmenu_normal_background']">
-    <mapping id="dialogmenu_normal_background" ref="amber_very_bright_glow"/>
-  </replace>
-
-  <replace sel="/colormap/mappings/mapping[@id='dialogmenu_instant_text']">
-    <mapping id="dialogmenu_instant_text" ref="amber_extra_bright_glow"/>
-  </replace>
-
-  <replace sel="/colormap/mappings/mapping[@id='dialogmenu_instant_background']">
-    <mapping id="dialogmenu_instant_background" ref="amber_extra_bright_glow"/>
-  </replace>
-
-  <replace sel="/colormap/mappings/mapping[@id='dialogmenu_center_unselected']">
-    <mapping id="dialogmenu_center_unselected" ref="amber_very_bright"/>
-  </replace>
   -->
 
   <!-- Common UI components -->
+
+  <!-- text -->
+  <replace sel="/colormap/mappings/mapping[@id='text_normal']">
+    <mapping id="text_normal" ref="catp_text_bright_weak_glow"/> <!-- was: white_weak_glow -->
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='text_inactive']">
+    <mapping id="text_inactive" ref="catp_overlay_1"/> <!-- was: grey_128 -->
+  </replace>
+
+  <!-- icon buttons -->
+  <replace sel="/colormap/mappings/mapping[@id='icon_normal']">
+    <mapping id="icon_normal" ref="catp_text_bright_weak_glow"/> <!-- was: white_weak_glow -->
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='icon_inactive']">
+    <mapping id="icon_inactive" ref="catp_overlay_1"/> <!-- was: grey_128 -->
+  </replace>
 
   <!-- button -->
   <replace sel="/colormap/mappings/mapping[@id='button_background_default']">
@@ -77,6 +71,31 @@
   <replace sel="/colormap/mappings/mapping[@id='button_background_inactive']">
     <mapping id="button_background_inactive" ref="catp_base"/>  <!-- was: grey_32 -->
   </replace>
+  <replace sel="/colormap/mappings/mapping[@id='button_highlight_inactive']">
+    <mapping id="button_highlight_inactive" ref="catp_surface_2"/> <!-- was: grey_96 -->
+  </replace>
+
+  <!-- frame_background (tooltips?) -->
+  <replace sel="/colormap/mappings/mapping[@id='frame_background_semitransparent']">
+    <mapping id="frame_background_semitransparent" ref="black_alpha_248"/>
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='frame_background_notification']">
+    <mapping id="frame_background_notification" ref="catp_base"/>  <!-- was: grey_32 -->
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='frame_background2_notification']">
+    <mapping id="frame_background2_notification" ref="catp_subtext_0"/>
+  </replace>
+
+  <!-- table -->
+  <replace sel="/colormap/mappings/mapping[@id='table_row_multiselect']">
+    <mapping id="table_row_multiselect" ref="catp_overlay_1_alpha_244"/>
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='table_row_highlight']">
+    <mapping id="table_row_highlight" ref="catp_subtext_0_moderate_glow"/>
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='table_row_highlight_grey']">
+    <mapping id="table_row_highlight_grey" ref="catp_overlay_1_alpha_192"/> <!-- was: grey_128_alpha_192 -->
+  </replace>
 
   <!-- row -->
   <replace sel="/colormap/mappings/mapping[@id='row_background_blue']">
@@ -88,8 +107,11 @@
   <replace sel="/colormap/mappings/mapping[@id='row_background_selected']">
     <mapping id="row_background_selected" ref="catp_subtext_0_alpha_160_glow"/>
   </replace>
+  <replace sel="/colormap/mappings/mapping[@id='row_separator]">
+    <mapping id="row_separator" ref="catp_overlay_1"/> <!-- was: grey_128 -->
+  </replace>
   <replace sel="/colormap/mappings/mapping[@id='row_separator_encyclopedia']">
-    <mapping id="row_separator_encyclopedia" ref="azure_extra_dark"/>
+    <mapping id="row_separator_encyclopedia" ref="catp_surface_1"/>
   </replace>
   <replace sel="/colormap/mappings/mapping[@id='row_title']">
     <mapping id="row_title" ref="catp_surface_0_alpha_160"/>
@@ -100,14 +122,6 @@
 
   <replace sel="/colormap/mappings/mapping[@id='row_background_unselectable']">
     <mapping id="row_background_unselectable" ref="catp_base"/>  <!-- was: grey_32 -->
-  </replace>
-
-  <!-- text -->
-  <replace sel="/colormap/mappings/mapping[@id='text_normal']">
-    <mapping id="text_normal" ref="catp_text_weak_glow"/>
-  </replace>
-  <replace sel="/colormap/mappings/mapping[@id='text_inactive']">
-    <mapping id="text_inactive" ref="catp_overlay_1"/>
   </replace>
 
   <!-- checkbox -->
@@ -149,16 +163,32 @@
   <replace sel="/colormap/mappings/mapping[@id='editbox_border']">
     <mapping id="editbox_border" ref="catp_overlay_2_moderate_glow"/>
   </replace>
+  <replace sel="/colormap/mappings/mapping[@id='editbox_inactive']">
+    <mapping id="editbox_inactive" ref="catp_overlay_1_alpha_192"/> <!-- was: grey_128_alpha_160 -->
+  </replace>
 
   <!-- slider -->
   <replace sel="/colormap/mappings/mapping[@id='slider_value']">
     <mapping id="slider_value" ref="catp_overlay_1"/>
   </replace>
+  <replace sel="/colormap/mappings/mapping[@id='slider_value_inactive']">
+    <mapping id="slider_value_inactive" ref="catp_overlay_1"/> <!-- was: grey_128 -->
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='slider_value_inactive_dark']">
+    <mapping id="slider_value_inactive_dark" ref="catp_surface_1"/> <!-- was: grey_64 -->
+  </replace>
   <replace sel="/colormap/mappings/mapping[@id='slider_background_default']">
     <mapping id="slider_background_default" ref="catp_surface_0_alpha_160"/>
   </replace>
+  <replace sel="/colormap/mappings/mapping[@id='slider_background_inactive']">
+    <mapping id="slider_background_inactive" ref="catp_surface_0_alpha_160"/> <!-- was: grey_48_alpha_160 -->
+  </replace>
   <replace sel="/colormap/mappings/mapping[@id='slider_arrow_click']">
     <mapping id="slider_arrow_click" ref="catp_surface_2"/>
+  </replace>
+
+  <replace sel="/colormap/mappings/mapping[@id='slider_arrow_disabled']">
+    <mapping id="slider_arrow_disabled" ref="catp_surface_2"/> <!-- was: grey_96 -->
   </replace>
 
   <!-- scrollbar -->
@@ -226,15 +256,23 @@
     <color id="catp_lavender" r="180" g="190" b="254" a="255"/>
     <color id="catp_lavender_1" r="183" g="189" b="248" a="255"/>
     <color id="catp_lavender_0" r="186" g="187" b="241" a="255"/>
+
+    <!-- Catppuccin UI colors below to replace default azure shades. -->
+
     <color id="catp_text" r="205" g="214" b="244" a="255"/>
     <color id="catp_text_weak_glow" r="205" g="214" b="244" a="255" glow="0.02"/>
 
-    <!-- azure_very_bright -->
+    <!-- slightly brighter than standard catppuccin text -->
+    <color id="catp_text_bright" r="224" g="233" b="255" a="255"/>
+    <color id="catp_text_bright_weak_glow" r="224" g="233" b="255" a="255" glow="0.02"/>
+
+    <!-- replaces: azure_very_bright -->
     <color id="catp_subtext_1" r="186" g="194" b="222" a="255"/>
 
     <!-- azure_bright -->
     <color id="catp_subtext_0" r="166" g="173" b="200" a="255"/>
     <color id="catp_subtext_0_alpha_160_glow" r="166" g="173" b="200" a="160" glow="0.5"/>
+    <color id="catp_subtext_0_moderate_glow" r="166" g="173" b="200" a="160" glow="0.2"/>
 
     <!-- azure -->
     <color id="catp_overlay_2" r="147" g="153" b="178" a="255"/>
@@ -244,6 +282,9 @@
 
     <!-- azure_dark -->
     <color id="catp_overlay_1" r="127" g="132" b="156" a="255"/>
+    <color id="catp_overlay_1_alpha_192" r="127" g="132" b="156" a="160"/>
+    <color id="catp_overlay_1_alpha_192" r="127" g="132" b="156" a="192"/>
+    <color id="catp_overlay_1_alpha_244" r="127" g="132" b="156" a="244"/>
 
     <color id="catp_overlay_0" r="108" g="112" b="134" a="255"/>
 
@@ -972,108 +1013,5 @@
   <replace sel="/colormap/colors/color[@id='magenta_extra_dark_alpha_160']">
     <color id="magenta_extra_dark_alpha_160" r="44" g="11" b="44" a="160"/>
   </replace>
-
-
-  <!-- Test Azure to catppuccin surface colors: -->
-
-  <!--
-
-  <replace sel="/colormap/colors/color[@id='azure_very_bright']">
-    <color id="azure_very_bright" r="186" g="194" b="222" a="255"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_very_bright_weak_glow']">
-    <color id="azure_very_bright_weak_glow" r="186" g="194" b="222" a="255" glow="0.05"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_very_bright_glow']">
-    <color id="azure_very_bright_glow" r="186" g="194" b="222" a="255" glow="0.5"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_very_bright_strong_glow']">
-    <color id="azure_very_bright_strong_glow" r="186" g="194" b="222" a="255" glow="1.0"/>
-  </replace>
-
-  <replace sel="/colormap/colors/color[@id='azure_bright']">
-    <color id="azure_bright" r="166" g="173" b="200" a="255"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_bright_weak_glow']">
-    <color id="azure_bright_weak_glow" r="166" g="173" b="200" a="255" glow="0.05"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_bright_moderate_glow']">
-    <color id="azure_bright_moderate_glow" r="166" g="173" b="200" a="255" glow="0.2"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_bright_glow']">
-    <color id="azure_bright_glow" r="166" g="173" b="200" a="255" glow="0.5"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_bright_alpha_160_glow']">
-    <color id="azure_bright_alpha_160_glow" r="166" g="173" b="200" a="160" glow="0.5"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_bright_strong_glow']">
-    <color id="azure_bright_strong_glow" r="166" g="173" b="200" a="255" glow="1"/>
-  </replace>
-
-  <replace sel="/colormap/colors/color[@id='azure']">
-    <color id="azure" r="147" g="153" b="178" a="255"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_alpha_128']">
-    <color id="azure_alpha_128" r="147" g="153" b="178" a="128"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_weak_glow']">
-    <color id="azure_weak_glow" r="147" g="153" b="178" a="255" glow="0.05"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_moderate_glow']">
-    <color id="azure_moderate_glow" r="147" g="153" b="178" a="255" glow="0.2"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_glow']">
-    <color id="azure_glow" r="147" g="153" b="178" a="255" glow="0.5"/>
-  </replace>
-
-  <replace sel="/colormap/colors/color[@id='azure_dark']">
-    <color id="azure_dark" r="127" g="132" b="156" a="255"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_dark_moderate_glow']">
-    <color id="azure_dark_moderate_glow" r="127" g="132" b="156" a="255" glow="0.2"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_dark_glow']">
-    <color id="azure_dark_glow" r="127" g="132" b="156" a="255" glow="0.5"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_dark_alpha_160']">
-    <color id="azure_dark_alpha_160" r="127" g="132" b="156" a="160"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_dark_alpha_160_glow']">
-    <color id="azure_dark_alpha_160_glow" r="127" g="132" b="156" a="160" glow="0.5"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_dark_alpha_224']">
-    <color id="azure_dark_alpha_224" r="127" g="132" b="156" a="224"/>
-  </replace>
-
-  <replace sel="/colormap/colors/color[@id='azure_very_dark']">
-    <color id="azure_very_dark" r="88" g="91" b="112" a="255"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_very_dark_moderate_glow']">
-    <color id="azure_very_dark_moderate_glow" r="88" g="91" b="112" a="255" glow="0.2"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_very_dark_glow']">
-    <color id="azure_very_dark_glow" r="88" g="91" b="112" a="255" glow="0.5"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_very_dark_alpha_160']">
-    <color id="azure_very_dark_alpha_160" r="88" g="91" b="112" a="160"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_very_dark_alpha_224']">
-    <color id="azure_very_dark_alpha_224" r="88" g="91" b="112" a="224"/>
-  </replace>
-
-  <replace sel="/colormap/colors/color[@id='azure_extra_dark']">
-    <color id="azure_extra_dark" r="49" g="50" b="68" a="255"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_extra_dark_glow']">
-    <color id="azure_extra_dark_glow" r="49" g="50" b="68" a="255" glow="0.5"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_extra_dark_alpha_96']">
-    <color id="azure_extra_dark_alpha_96" r="49" g="50" b="68" a="96"/>
-  </replace>
-  <replace sel="/colormap/colors/color[@id='azure_extra_dark_alpha_160']">
-    <color id="azure_extra_dark_alpha_160" r="49" g="50" b="68" a="160"/>
-  </replace>
-
-  -->
 
 </diff>
