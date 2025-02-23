@@ -1,12 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<content
-    id="catppuccin_ui_colors"
-    name="Catppuccin UI Colors"
-    version="100"
-    description="Catppuccin UI Colors - https://catppuccin.com/palette/"
-    author="tonedawg"
-    save="false"
-    sync="false"
-    date="2025-02-21"
-    lastupdate="1740244623">
+<content id="ws_3433212587" name="Catppuccin UI Colors" version="100" description="Modifies the user interface (UI) colors to match the Catppuccin palette. Existing X4 colors are slightly desaturated to match for easy on the eyes viewing. Source: https://github.com/AnthonyDiGirolamo/x4_catppuccin_ui_colors" author="tonedawg" save="false" date="2025-02-23" lastupdate="1740348454" sync="false">
 </content>

@@ -4,7 +4,11 @@ A mod that changes the UI colors to match the [Catppuccin palette](https://catpp
 
 ![/screenshots/screenshot1.jpg](/screenshots/screenshot1.jpg)
 
-## Installing
+## Workshop
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=3433212587
+
+## Manual Installation
 
 ### Windows
 
