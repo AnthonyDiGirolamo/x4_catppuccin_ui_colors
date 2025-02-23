@@ -60,7 +60,7 @@
 
   <!-- Common UI components -->
 
-  <!-- buttons -->
+  <!-- button -->
   <replace sel="/colormap/mappings/mapping[@id='button_background_default']">
     <mapping id="button_background_default" ref="catp_surface_2_alpha_224"/>
   </replace>
@@ -71,7 +71,14 @@
     <mapping id="button_highlight_bigbutton" ref="catp_overlay_2_weak_glow"/>
   </replace>
 
-  <!-- rows -->
+  <replace sel="/colormap/mappings/mapping[@id='button_text_inactive']">
+    <mapping id="button_text_inactive" ref="catp_overlay_1"/>  <!-- was: grey_128 -->
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='button_background_inactive']">
+    <mapping id="button_background_inactive" ref="catp_base"/>  <!-- was: grey_32 -->
+  </replace>
+
+  <!-- row -->
   <replace sel="/colormap/mappings/mapping[@id='row_background_blue']">
     <mapping id="row_background_blue" ref="catp_surface_2_alpha_224"/>
   </replace>
@@ -91,6 +98,19 @@
     <mapping id="row_title_background" ref="catp_surface_0_alpha_224"/>
   </replace>
 
+  <replace sel="/colormap/mappings/mapping[@id='row_background_unselectable']">
+    <mapping id="row_background_unselectable" ref="catp_base"/>  <!-- was: grey_32 -->
+  </replace>
+
+  <!-- text -->
+  <replace sel="/colormap/mappings/mapping[@id='text_normal']">
+    <mapping id="text_normal" ref="catp_text_weak_glow"/>
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='text_inactive']">
+    <mapping id="text_inactive" ref="catp_overlay_1"/>
+  </replace>
+
+  <!-- checkbox -->
   <replace sel="/colormap/mappings/mapping[@id='checkbox_background_default']">
     <mapping id="checkbox_background_default" ref="catp_surface_2"/>
   </replace>
@@ -98,6 +118,7 @@
     <mapping id="checkbox_background_inactive" ref="catp_surface_0_alpha_160"/>
   </replace>
 
+  <!-- dropdown -->
   <replace sel="/colormap/mappings/mapping[@id='dropdown_background_default']">
     <mapping id="dropdown_background_default" ref="catp_surface_2_alpha_224"/>
   </replace>
@@ -105,6 +126,23 @@
     <mapping id="dropdown_highlight_default" ref="catp_overlay_2_moderate_glow"/>
   </replace>
 
+  <replace sel="/colormap/mappings/mapping[@id='dropdown_text_inactive']">
+    <mapping id="dropdown_text_inactive" ref="catp_overlay_1"/> <!-- grey_128 -->
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='dropdown_background_inactive']">
+    <mapping id="dropdown_background_inactive" ref="catp_surface_0"/> <!-- grey_48 -->
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='dropdown_highlight_inactive']">
+    <mapping id="dropdown_highlight_inactive" ref="catp_surface_2"/> <!-- grey_96 -->
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='dropdown_option_text_inactive']">
+    <mapping id="dropdown_option_text_inactive" ref="catp_subtext_0"/> <!-- grey_160 -->
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='dropdown_option_background_inactive']">
+    <mapping id="dropdown_option_background_inactive" ref="catp_base"/> <!-- grey_32 -->
+  </replace>
+
+  <!-- editbox -->
   <replace sel="/colormap/mappings/mapping[@id='editbox_background_default']">
     <mapping id="editbox_background_default" ref="catp_surface_2_alpha_224"/>
   </replace>
@@ -112,6 +150,7 @@
     <mapping id="editbox_border" ref="catp_overlay_2_moderate_glow"/>
   </replace>
 
+  <!-- slider -->
   <replace sel="/colormap/mappings/mapping[@id='slider_value']">
     <mapping id="slider_value" ref="catp_overlay_1"/>
   </replace>
@@ -122,6 +161,7 @@
     <mapping id="slider_arrow_click" ref="catp_surface_2"/>
   </replace>
 
+  <!-- scrollbar -->
   <replace sel="/colormap/mappings/mapping[@id='scrollbar_background']">
     <mapping id="scrollbar_background" ref="catp_surface_2"/>
   </replace>
@@ -135,7 +175,7 @@
     <mapping id="scrollbar_slider_click" ref="catp_surface_0"/>
   </replace>
   <replace sel="/colormap/mappings/mapping[@id='hint_background_azure']">
-    <mapping id="hint_background_azure" ref="azure_bright_glow"/>
+    <mapping id="hint_background_azure" ref="catp_overlay_2_bright_glow"/>
   </replace>
 
   <!-- Adding new colors: -->
@@ -187,6 +227,7 @@
     <color id="catp_lavender_1" r="183" g="189" b="248" a="255"/>
     <color id="catp_lavender_0" r="186" g="187" b="241" a="255"/>
     <color id="catp_text" r="205" g="214" b="244" a="255"/>
+    <color id="catp_text_weak_glow" r="205" g="214" b="244" a="255" glow="0.02"/>
 
     <!-- azure_very_bright -->
     <color id="catp_subtext_1" r="186" g="194" b="222" a="255"/>
