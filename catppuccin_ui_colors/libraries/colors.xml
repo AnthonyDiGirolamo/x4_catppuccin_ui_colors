@@ -25,7 +25,7 @@
     <mapping id="targetmonitor_deco_background" ref="black_alpha_0"/>
   </replace>
 
-  <!-- TODO: Not sure what these appear as. -->
+  <!-- Not sure what these appear as. -->
 
   <!--
   <replace sel="/colormap/mappings/mapping[@id='messageticker_deco_background']">
@@ -64,7 +64,6 @@
   <replace sel="/colormap/mappings/mapping[@id='button_highlight_bigbutton']">
     <mapping id="button_highlight_bigbutton" ref="catp_overlay_2_weak_glow"/>
   </replace>
-
   <replace sel="/colormap/mappings/mapping[@id='button_text_inactive']">
     <mapping id="button_text_inactive" ref="catp_overlay_1"/>  <!-- was: grey_128 -->
   </replace>
@@ -74,6 +73,8 @@
   <replace sel="/colormap/mappings/mapping[@id='button_highlight_inactive']">
     <mapping id="button_highlight_inactive" ref="catp_surface_2"/> <!-- was: grey_96 -->
   </replace>
+
+  <!-- TODO: Some inactive button backgrounds still appear as grey -->
 
   <!-- frame_background (tooltips?) -->
   <replace sel="/colormap/mappings/mapping[@id='frame_background_semitransparent']">
@@ -156,6 +157,8 @@
     <mapping id="dropdown_option_background_inactive" ref="catp_base"/> <!-- grey_32 -->
   </replace>
 
+  <!-- TODO: Some inactive dropdown backgrounds still appear as grey -->
+
   <!-- editbox -->
   <replace sel="/colormap/mappings/mapping[@id='editbox_background_default']">
     <mapping id="editbox_background_default" ref="catp_surface_2_alpha_224"/>
@@ -211,6 +214,7 @@
   <!-- Adding new colors: -->
 
   <add sel="/colormap/colors">
+    <!-- These colors are currently unused. -->
     <color id="catp_rosewater" r="245" g="224" b="220" a="255"/>
     <color id="catp_rosewater_1" r="244" g="219" b="214" a="255"/>
     <color id="catp_rosewater_0" r="242" g="213" b="207" a="255"/>
@@ -304,180 +308,10 @@
     <color id="catp_crust" r="17" g="17" b="27" a="255"/>
   </add>
 
-  <!-- original color id="red" r="255" g="0" b="0" a="255" -->
-  <!-- original color id="red_weak_glow" r="255" g="0" b="0" a="255" glow="0.05" -->
-  <!-- original color id="red_moderate_glow" r="255" g="0" b="0" a="255" glow="0.2" -->
-  <!-- original color id="red_glow" r="255" g="0" b="0" a="255" glow="0.5" -->
-  <!-- original color id="red_alpha_64" r="255" g="0" b="0" a="64" -->
-  <!-- original color id="red_very_bright_weak_glow" r="255" g="153" b="153" a="255" glow="0.05" -->
-  <!-- original color id="red_very_bright_moderate_glow" r="255" g="153" b="153" a="255" glow="0.2" -->
-  <!-- original color id="red_very_bright_glow" r="255" g="153" b="153" a="255" glow="0.5" -->
-  <!-- original color id="red_very_bright_alpha_160_glow" r="255" g="153" b="153" a="160" glow="0.5" -->
-  <!-- original color id="red_extra_bright_glow" r="255" g="204" b="204" a="255" glow="0.5" -->
-  <!-- original color id="red_extra_bright_strong_glow" r="255" g="204" b="204" a="255" glow="1.0" -->
-  <!-- original color id="red_bright" r="255" g="77" b="77" a="255" -->
-  <!-- original color id="red_bright_weak_glow" r="255" g="77" b="77" a="255" glow="0.05" -->
-  <!-- original color id="red_bright_moderate_glow" r="255" g="77" b="77" a="255" glow="0.2" -->
-  <!-- original color id="red_bright_glow" r="255" g="77" b="77" a="255" glow="0.5" -->
-  <!-- original color id="red_dark" r="179" g="0" b="0" a="255" -->
-  <!-- original color id="red_dark_moderate_glow" r="179" g="0" b="0" a="255" glow="0.2" -->
-  <!-- original color id="red_dark_glow" r="179" g="0" b="0" a="255" glow="0.5" -->
-  <!-- original color id="red_dark_alpha_128" r="179" g="0" b="0" a="128" -->
-  <!-- original color id="red_dark_alpha_160" r="179" g="0" b="0" a="160" -->
-  <!-- original color id="red_dark_alpha_160_glow" r="179" g="0" b="0" a="160" glow="0.5" -->
-  <!-- original color id="red_very_dark" r="102" g="0" b="0" a="255" -->
-  <!-- original color id="red_very_dark_moderate_glow" r="102" g="0" b="0" a="255" glow="0.2" -->
-  <!-- original color id="red_very_dark_glow" r="102" g="0" b="0" a="255" glow="0.5" -->
-  <!-- original color id="red_extra_dark" r="50" g="0" b="0" a="255" -->
-  <!-- original color id="orange" r="255" g="139" b="0" a="255" -->
-  <!-- original color id="orange_weak_glow" r="255" g="139" b="0" a="255" glow="0.05" -->
-  <!-- original color id="orange_moderate_glow" r="255" g="139" b="0" a="255" glow="0.2" -->
-  <!-- original color id="orange_glow" r="255" g="139" b="0" a="255" glow="0.5" -->
-  <!-- original color id="orange_alpha_160" r="255" g="139" b="0" a="160" -->
-  <!-- original color id="orange_alpha_160_glow" r="255" g="139" b="0" a="160" glow="0.5" -->
-  <!-- original color id="orange_very_bright" r="255" g="209" b="153" a="255" -->
-  <!-- original color id="orange_bright" r="255" g="185" b="102" a="255" -->
-  <!-- original color id="orange_bright_weak_glow" r="255" g="185" b="102" a="255" glow="0.05" -->
-  <!-- original color id="orange_bright_moderate_glow" r="255" g="185" b="102" a="255" glow="0.2" -->
-  <!-- original color id="orange_bright_glow" r="255" g="185" b="102" a="255" glow="0.5" -->
-  <!-- original color id="orange_bright_alpha_160" r="255" g="185" b="102" a="160" -->
-  <!-- original color id="orange_bright_alpha_160_glow" r="255" g="185" b="102" a="160" glow="0.5" -->
-  <!-- original color id="orange_dark" r="179" g="97" b="0" a="255" -->
-  <!-- original color id="orange_dark_alpha_128" r="179" g="97" b="0" a="128" -->
-  <!-- original color id="orange_dark_weak_glow" r="179" g="97" b="0" a="255" glow="0.05" -->
-  <!-- original color id="orange_dark_glow" r="179" g="97" b="0" a="255" glow="0.5" -->
-  <!-- original color id="orange_very_dark" r="102" g="55" b="0" a="255" -->
-  <!-- original color id="orange_very_dark_glow" r="102" g="55" b="0" a="255" glow="0.5" -->
-  <!-- original color id="orange_extra_dark" r="51" g="28" b="0" a="255" -->
-  <!-- original color id="orange_extra_dark_alpha_160" r="51" g="28" b="0" a="160" -->
-  <!-- original color id="orange_extra_dark_glow" r="51" g="28" b="0" a="255" glow="0.5" -->
-  <!-- original color id="amber" r="255" g="191" b="0" a="255" -->
-  <!-- original color id="amber_moderate_glow" r="255" g="191" b="0" a="255" glow="0.2" -->
-  <!-- original color id="amber_glow" r="255" g="191" b="0" a="255" glow="0.5" -->
-  <!-- original color id="amber_extra_bright" r="255" g="242" b="204" a="255" -->
-  <!-- original color id="amber_extra_bright_glow" r="255" g="242" b="204" a="255" glow="0.5" -->
-  <!-- original color id="amber_very_bright" r="255" g="229" b="153" a="255" -->
-  <!-- original color id="amber_very_bright_glow" r="255" g="229" b="153" a="255" glow="0.5" -->
-  <!-- original color id="amber_bright" r="255" g="210" b="77" a="255" -->
-  <!-- original color id="amber_dark" r="179" g="134" b="0" a="255" -->
-  <!-- original color id="amber_dark_moderate_glow" r="179" g="134" b="0" a="255" glow="0.2" -->
-  <!-- original color id="amber_dark_glow" r="179" g="134" b="0" a="255" glow="0.5" -->
-  <!-- original color id="amber_very_dark" r="102" g="76" b="0" a="255" -->
-  <!-- original color id="amber_very_dark_moderate_glow" r="102" g="76" b="0" a="255" glow="0.2" -->
-  <!-- original color id="amber_extra_dark" r="51" g="35" b="0" a="255" -->
-  <!-- original color id="yellow" r="255" g="255" b="0" a="255" -->
-  <!-- original color id="yellow_moderate_glow" r="255" g="255" b="0" a="255" glow="0.2" -->
-  <!-- original color id="yellow_glow" r="255" g="255" b="0" a="255" glow="0.5" -->
-  <!-- original color id="yellow_alpha_160" r="255" g="255" b="0" a="160" -->
-  <!-- original color id="yellow_alpha_160_glow" r="255" g="255" b="0" a="160" glow="0.5" -->
-  <!-- original color id="yellow_extra_bright" r="255" g="255" b="204" a="255" -->
-  <!-- original color id="yellow_extra_bright_moderate_glow" r="255" g="255" b="204" a="255" glow="0.2" -->
-  <!-- original color id="yellow_very_bright" r="255" g="255" b="153" a="255" -->
-  <!-- original color id="yellow_very_bright_weak_glow" r="255" g="255" b="153" a="255" glow="0.05" -->
-  <!-- original color id="yellow_very_bright_glow" r="255" g="255" b="153" a="255" glow="0.5" -->
-  <!-- original color id="yellow_bright" r="255" g="255" b="77" a="255" -->
-  <!-- original color id="yellow_bright_glow" r="255" g="255" b="77" a="255" glow="0.5" -->
-  <!-- original color id="yellow_dark" r="179" g="179" b="0" a="255" -->
-  <!-- original color id="yellow_dark_weak_glow" r="179" g="179" b="0" a="255" glow="0.05" -->
-  <!-- original color id="yellow_dark_glow" r="179" g="179" b="0" a="255" glow="0.5" -->
-  <!-- original color id="yellow_very_dark" r="102" g="102" b="0" a="255" -->
-  <!-- original color id="yellow_very_dark_moderate_glow" r="102" g="102" b="0" a="255" glow="0.2" -->
-  <!-- original color id="yellow_very_dark_glow" r="102" g="102" b="0" a="255" glow="0.5" -->
-  <!-- original color id="green" r="0" g="255" b="0" a="255" -->
-  <!-- original color id="green_weak_glow" r="0" g="255" b="0" a="255" glow="0.05" -->
-  <!-- original color id="green_moderate_glow" r="0" g="255" b="0" a="255" glow="0.2" -->
-  <!-- original color id="green_glow" r="0" g="255" b="0" a="255" glow="0.5" -->
-  <!-- original color id="green_extra_bright" r="204" g="255" b="204" a="255" -->
-  <!-- original color id="green_extra_bright_weak_glow" r="204" g="255" b="204" a="255" glow="0.02" --> <!--"weak_glow" should be 0.05 but that was too much, therefore i am breaking the rule on purpose-->
-  <!-- original color id="green_extra_bright_glow" r="204" g="255" b="204" a="255" glow="0.5" -->
-  <!-- original color id="green_very_bright" r="153" g="255" b="153" a="255" -->
-  <!-- original color id="green_very_bright_weak_glow" r="153" g="255" b="153" a="255" glow="0.05" -->
-  <!-- original color id="green_very_bright_moderate_glow" r="153" g="255" b="153" a="255" glow="0.2" -->
-  <!-- original color id="green_very_bright_glow" r="153" g="255" b="153" a="255" glow="0.5" -->
-  <!-- original color id="green_bright" r="77" g="255" b="77" a="255" -->
-  <!-- original color id="green_bright_alpha_64" r="77" g="255" b="77" a="64" -->
-  <!-- original color id="green_bright_weak_glow" r="77" g="255" b="77" a="255" glow="0.05" -->
-  <!-- original color id="green_bright_moderate_glow" r="77" g="255" b="77" a="255" glow="0.2" -->
-  <!-- original color id="green_bright_glow" r="77" g="255" b="77" a="255" glow="0.5" -->
-  <!-- original color id="green_dark" r="0" g="179" b="0" a="255" -->
-  <!-- original color id="green_dark_moderate_glow" r="0" g="179" b="0" a="255" glow="0.2" -->
-  <!-- original color id="green_dark_weak_glow" r="0" g="179" b="0" a="255" glow="0.05" -->
-  <!-- original color id="green_dark_glow" r="0" g="179" b="0" a="255" glow="0.5" -->
-  <!-- original color id="green_very_dark" r="0" g="102" b="0" a="255" -->
-  <!-- original color id="green_very_dark_moderate_glow" r="0" g="102" b="0" a="255" glow="0.2" -->
-  <!-- original color id="green_very_dark_weak_glow" r="0" g="102" b="0" a="255" glow="0.05" -->
-  <!-- original color id="green_very_dark_glow" r="0" g="102" b="0" a="255" glow="0.5" -->
-  <!-- original color id="cyan" r="0" g="249" b="255" a="255" -->
-  <!-- original color id="cyan_weak_glow" r="0" g="249" b="255" a="255" glow="0.05" -->
-  <!-- original color id="cyan_glow" r="0" g="249" b="255" a="255" glow="0.5" -->
-  <!-- original color id="cyan_alpha_64_glow" r="0" g="249" b="255" a="64" -->
-  <!-- original color id="cyan_very_bright" r="153" g="253" b="255" a="255" -->
-  <!-- original color id="cyan_very_bright_glow" r="153" g="253" b="255" a="255" glow="0.5" -->
-  <!-- original color id="cyan_bright_glow" r="77" g="252" b="255" a="255" glow="0.5" -->
-  <!-- original color id="cyan_dark" r="0" g="175" b="179" a="255" -->
-  <!-- original color id="cyan_dark_weak_glow" r="0" g="175" b="179" a="255" glow="0.05" -->
-  <!-- original color id="cyan_dark_moderate_glow" r="0" g="175" b="179" a="255" glow="0.2" -->
-  <!-- original color id="cyan_dark_glow" r="0" g="175" b="179" a="255" glow="0.5" -->
-  <!-- original color id="cyan_very_dark" r="0" g="100" b="102" a="255" -->
-  <!-- original color id="cyan_very_dark_moderate_glow" r="0" g="100" b="102" a="255" glow="0.2" -->
-  <!-- original color id="cyan_very_dark_glow" r="0" g="100" b="102" a="255" glow="0.5" -->
-  <!-- original color id="cyan_extra_dark" r="0" g="49" b="51" a="255" -->
-  <!-- original color id="cyan_extra_dark_alpha_160" r="0" g="49" b="51" a="160" -->
-  <!-- original color id="azure" r="0" g="149" b="255" a="255" -->
-  <!-- original color id="azure_alpha_128" r="0" g="149" b="255" a="128" -->
-  <!-- original color id="azure_weak_glow" r="0" g="149" b="255" a="255" glow="0.05" -->
-  <!-- original color id="azure_moderate_glow" r="0" g="149" b="255" a="255" glow="0.2" -->
-  <!-- original color id="azure_glow" r="0" g="149" b="255" a="255" glow="0.5" -->
-  <!-- original color id="azure_very_bright" r="153" g="213" b="255" a="255" -->
-  <!-- original color id="azure_very_bright_weak_glow" r="153" g="213" b="255" a="255" glow="0.05" -->
-  <!-- original color id="azure_very_bright_glow" r="153" g="213" b="255" a="255" glow="0.5" -->
-  <!-- original color id="azure_very_bright_strong_glow" r="153" g="213" b="255" a="255" glow="1.0" -->
-  <!-- original color id="azure_bright" r="77" g="181" b="255" a="255" -->
-  <!-- original color id="azure_bright_weak_glow" r="77" g="181" b="255" a="255" glow="0.05" -->
-  <!-- original color id="azure_bright_moderate_glow" r="77" g="181" b="255" a="255" glow="0.2" -->
-  <!-- original color id="azure_bright_glow" r="77" g="181" b="255" a="255" glow="0.5" -->
-  <!-- original color id="azure_bright_alpha_160_glow" r="77" g="181" b="255" a="160" glow="0.5" -->
-  <!-- original color id="azure_bright_strong_glow" r="77" g="181" b="255" a="255" glow="1" -->
-  <!-- original color id="azure_dark" r="0" g="105" b="179" a="255" -->
-  <!-- original color id="azure_dark_moderate_glow" r="0" g="105" b="179" a="255" glow="0.2" -->
-  <!-- original color id="azure_dark_glow" r="0" g="105" b="179" a="255" glow="0.5" -->
-  <!-- original color id="azure_dark_alpha_160" r="0" g="105" b="179" a="160" -->
-  <!-- original color id="azure_dark_alpha_160_glow" r="0" g="105" b="179" a="160" glow="0.5" -->
-  <!-- original color id="azure_dark_alpha_224" r="0" g="105" b="179" a="224" -->
-  <!-- original color id="azure_very_dark" r="0" g="60" b="102" a="255" -->
-  <!-- original color id="azure_very_dark_moderate_glow" r="0" g="60" b="102" a="255" glow="0.2" -->
-  <!-- original color id="azure_very_dark_glow" r="0" g="60" b="102" a="255" glow="0.5" -->
-  <!-- original color id="azure_very_dark_alpha_160" r="0" g="60" b="102" a="160" -->
-  <!-- original color id="azure_very_dark_alpha_224" r="0" g="60" b="102" a="224" -->
-  <!-- original color id="azure_extra_dark" r="0" g="30" b="51" a="255" -->
-  <!-- original color id="azure_extra_dark_glow" r="0" g="30" b="51" a="255" glow="0.5" -->
-  <!-- original color id="azure_extra_dark_alpha_96" r="0" g="30" b="51" a="96" -->
-  <!-- original color id="azure_extra_dark_alpha_160" r="0" g="30" b="51" a="160" -->
-  <!-- original color id="magenta" r="255" g="0" b="255" a="255" -->
-  <!-- original color id="magenta_moderate_glow" r="255" g="0" b="255" a="255" glow="0.2" -->
-  <!-- original color id="magenta_glow" r="255" g="0" b="255" a="255" glow="0.5" -->
-  <!-- original color id="magenta_extra_bright_moderate_glow" r="255" g="204" b="255" a="255" glow="0.2" -->
-  <!-- original color id="magenta_very_bright" r="255" g="153" b="255" a="255" -->
-  <!-- original color id="magenta_very_bright_weak_glow" r="255" g="153" b="255" a="255" glow="0.05" -->
-  <!-- original color id="magenta_very_bright_moderate_glow" r="255" g="153" b="255" a="255" glow="0.2" -->
-  <!-- original color id="magenta_very_bright_glow" r="255" g="153" b="255" a="255" glow="0.5" -->
-  <!-- original color id="magenta_bright" r="255" g="77" b="255" a="255" -->
-  <!-- original color id="magenta_bright_moderate_glow" r="255" g="77" b="255" a="255" glow="0.2" -->
-  <!-- original color id="magenta_bright_glow" r="255" g="77" b="255" a="255" glow="0.5" -->
-  <!-- original color id="magenta_bright_alpha_160_glow" r="255" g="77" b="255" a="160" glow="0.5" -->
-  <!-- original color id="magenta_dark" r="179" g="0" b="179" a="255" -->
-  <!-- original color id="magenta_dark_weak_glow" r="179" g="0" b="179" a="255" glow="0.05" -->
-  <!-- original color id="magenta_dark_glow" r="179" g="0" b="179" a="255" glow="0.5" -->
-  <!-- original color id="magenta_dark_alpha_160_glow" r="179" g="0" b="179" a="160" glow="0.5" -->
-  <!-- original color id="magenta_very_dark" r="102" g="0" b="102" a="255" -->
-  <!-- original color id="magenta_very_dark_moderate_glow" r="102" g="0" b="102" a="255" glow="0.2" -->
-  <!-- original color id="magenta_very_dark_glow" r="102" g="0" b="102" a="255" glow="0.5" -->
-  <!-- original color id="magenta_extra_dark" r="51" g="0" b="51" a="255" -->
-  <!-- original color id="magenta_extra_dark_alpha_160" r="51" g="0" b="51" a="160" -->
+  <!-- Desaturated original Colors
+       Created using Gimp: Colors->Saturation Scale=0.65 -->
 
- <!-- Desaturated colors using Gimp: Colors > Saturation Scale=0.65 -->
-
- <!-- Red colors -->
+  <!-- Red colors -->
 
   <replace sel="/colormap/colors/color[@id='red']">
     <color id="red" r="222" g="79" b="79" a="255"/>
