@@ -64,6 +64,12 @@
   <replace sel="/colormap/mappings/mapping[@id='button_background_default']">
     <mapping id="button_background_default" ref="catp_surface_2_alpha_224"/>
   </replace>
+  <replace sel="/colormap/colors/color[@id='button_highlight_default']">
+    <mapping id="button_highlight_default" ref="catp_overlay_2_moderate_glow"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='button_highlight_bigbutton']">
+    <mapping id="button_highlight_bigbutton" ref="catp_overlay_2_weak_glow"/>
+  </replace>
 
   <!-- rows -->
   <replace sel="/colormap/colors/color[@id='row_background_blue']">
@@ -74,6 +80,59 @@
   </replace>
   <replace sel="/colormap/colors/color[@id='row_background_selected']">
     <mapping id="row_background_selected" ref="catp_subtext_0_alpha_160_glow"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='row_separator_encyclopedia']">
+    <mapping id="row_separator_encyclopedia" ref="azure_extra_dark"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='row_title']">
+    <mapping id="row_title" ref="catp_surface_0_alpha_160"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='row_title_background']">
+    <mapping id="row_title_background" ref="catp_surface_0_alpha_224"/>
+  </replace>
+
+  <replace sel="/colormap/colors/color[@id='checkbox_background_default']">
+    <mapping id="checkbox_background_default" ref="catp_surface_2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='checkbox_background_inactive']">
+    <mapping id="checkbox_background_inactive" ref="catp_surface_0_alpha_160"/>
+  </replace>
+
+  <replace sel="/colormap/colors/color[@id='dropdown_background_default']">
+    <mapping id="dropdown_background_default" ref="catp_surface_2_alpha_224"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='dropdown_highlight_default']">
+    <mapping id="dropdown_highlight_default" ref="catp_overlay_2_moderate_glow"/>
+  </replace>
+
+  <replace sel="/colormap/colors/color[@id='editbox_background_default']">
+    <mapping id="editbox_background_default" ref="catp_surface_2_alpha_224"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='editbox_border']">
+    <mapping id="editbox_border" ref="catp_overlay_2_moderate_glow"/>
+  </replace>
+
+  <replace sel="/colormap/colors/color[@id='slider_value']">
+    <mapping id="slider_value" ref="azure_dark"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='slider_background_default']">
+    <mapping id="slider_background_default" ref="azure_extra_dark_alpha_160"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='slider_arrow_click']">
+    <mapping id="slider_arrow_click" ref="azure_very_dark"/>
+  </replace>
+
+  <replace sel="/colormap/colors/color[@id='scrollbar_background']">
+    <mapping id="scrollbar_background" ref="catp_surface_2"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='scrollbar_slider_normal']">
+    <mapping id="scrollbar_slider_normal" ref="catp_overlay_2_weak_glow"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='scrollbar_slider_highlight']">
+    <mapping id="scrollbar_slider_highlight" ref="catp_overlay_2_bright_glow"/>
+  </replace>
+  <replace sel="/colormap/colors/color[@id='scrollbar_slider_click']">
+    <mapping id="scrollbar_slider_click" ref="catp_surface_0"/>
   </replace>
 
   <!-- Adding new colors: -->
@@ -135,6 +194,9 @@
 
     <!-- azure -->
     <color id="catp_overlay_2" r="147" g="153" b="178" a="255"/>
+    <color id="catp_overlay_2_moderate_glow" r="147" g="153" b="178" a="255" glow="0.2"/>
+    <color id="catp_overlay_2_weak_glow" r="147" g="153" b="178" a="255" glow="0.05"/>
+    <color id="catp_overlay_2_bright_glow" r="147" g="153" b="178" a="255" glow="0.5"/>
 
     <!-- azure_dark -->
     <color id="catp_overlay_1" r="127" g="132" b="156" a="255"/>
@@ -149,6 +211,7 @@
 
     <!-- azure_extra_dark -->
     <color id="catp_surface_0" r="49" g="50" b="68" a="255"/>
+    <color id="catp_surface_0_alpha_160" r="49" g="50" b="68" a="160"/>
     <color id="catp_surface_0_alpha_224" r="49" g="50" b="68" a="224"/>
 
     <color id="catp_base" r="30" g="30" b="46" a="255"/>
