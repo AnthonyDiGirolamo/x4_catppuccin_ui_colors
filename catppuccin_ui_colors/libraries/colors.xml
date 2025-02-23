@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <diff>
 
-  <!-- Example of changing a UI color mapping:
+  <!-- 100% invisible HUD window backgrounds -->
+
+  <replace sel="/colormap/mappings/mapping[@id='playeractivity_travel_background']">
+    <mapping id="playeractivity_travel_background" ref="black_alpha_0"/>
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='playeractivity_longrangescan_background']">
+    <mapping id="playeractivity_longrangescan_background" ref="black_alpha_0"/>
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='playeractivity_scan_background']">
+    <mapping id="playeractivity_scan_background" ref="black_alpha_0"/>
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='playeractivity_seta_background']">
+    <mapping id="playeractivity_seta_background" ref="black_alpha_0"/>
+  </replace>
+
+  <!--
+    NOTE: This doesn't fully work for the right cockpit HUD window.
+    There is some alpha setting logic in `ui/core/lua/monitors.lua`
+    setDecoColors() fuction.
+  -->
+  <replace sel="/colormap/mappings/mapping[@id='targetmonitor_deco_background']">
+    <mapping id="targetmonitor_deco_background" ref="black_alpha_0"/>
+  </replace>
+
+  <!-- TODO: Not sure what these appear as.
+
+  <replace sel="/colormap/mappings/mapping[@id='messageticker_deco_background']">
+    <mapping id="messageticker_deco_background" ref="black_alpha_0"/>
+  </replace>
+  <replace sel="/colormap/mappings/mapping[@id='chat_background']">
+    <mapping id="chat_background" ref="black_alpha_0"/>
+  </replace>
+
+  -->
+
+ <!-- WIP Dialog Menu Colors
 
   <replace sel="/colormap/mappings/mapping[@id='dialogmenu_normal_text']">
     <mapping id="dialogmenu_normal_text" ref="amber_very_bright_glow"/>
@@ -22,6 +57,7 @@
   <replace sel="/colormap/mappings/mapping[@id='dialogmenu_center_unselected']">
     <mapping id="dialogmenu_center_unselected" ref="amber_very_bright"/>
   </replace>
+
   -->
 
   <!-- Adding new colors: -->
@@ -69,7 +105,6 @@
     <color id="catp_blue_a" r="140" g="166" b="230" a="255"/>
     <color id="catp_blue_b" r="143" g="166" b="225" a="255"/>
     <color id="catp_blue_c" r="145" g="164" b="217" a="255"/>
-    <color id="catp_blue_d" r="114" g="151" b="209" a="255"/>
     <color id="catp_lavender" r="180" g="190" b="254" a="255"/>
     <color id="catp_lavender_1" r="183" g="189" b="248" a="255"/>
     <color id="catp_lavender_0" r="186" g="187" b="241" a="255"/>
